@@ -1,2 +1,3 @@
-# config
-Configs
+# Dotfiles
+
+Dotfiles / Configs

@@ -1,6 +1,6 @@
 format = """
-$username\
-$hostname\
+$username@\
+$hostname:\
 $localip\
 $shlvl\
 $singularity\
@@ -22,6 +22,7 @@ $pulumi\
 $terraform\
 $vagrant\
 $nix_shell\
+$python\
 $conda\
 $aws\
 $gcloud\
@@ -37,12 +38,12 @@ $character"""
 add_newline = false
 
 [username]
-format = "[$user]($style)@"
+format = "[$user]($style)"
 show_always = true
 
 [hostname]
 ssh_only = false
-format = "[$hostname](bold red):"
+format = "[$hostname](bold red)"
 disabled = false
 
 [directory]
@@ -57,14 +58,8 @@ min_time = 1
 format = "[$duration]($style)"
 
 [docker_context]
-symbol = ""
-format = "[docker:$context]($style) "
-
-[git_branch]
-format = "[$symbol$branch]($style) "
-
-[git_metrics]
-disabled = false
+symbol = "docker:"
+format = "[$symbol$context]($style) "
 
 [vagrant]
 format = "[vagrant:$version](bold white) "
@@ -88,3 +83,62 @@ disabled = false
 [helm]
 disabled = false
 format = "[helm:($version)]($style)"
+
+[aws]
+format = '[aws:($profile )(\($region\) )]($style)'
+style = "bold yellow"
+
+[git_metrics]
+disabled = false
+
+[git_branch]
+format = "[$symbol$branch]($style) "
+style = "fg:#282c34 bg:#98be65"
+
+[git_commit]
+format = "[\\($hash\\)]($style) [\\($tag\\)]($style)"
+style = "green"
+
+#[git_status]
+#format="[$modified](fg:#282c34 bg:#51afef)[$untracked](fg:#282c34 bg:#51afef)[$staged](fg:#282c34 bg:#51afef)[$renamed](fg:#282c34 bg:#51afef) "
+#conflicted = "="
+#ahead =	"⇡${count} "
+#behind = "⇣${count} "
+#diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+#untracked = "?${count} "
+#modified = "!${count} "
+#staged = "+${count} "
+#renamed = "»${count} "
+#deleted = "✘${count} "
+#style =	"red"
+#disabled = false
+
+[git_state]
+rebase = "REBASING"
+merge = "MERGING"
+revert = "REVERTING"
+cherry_pick = "CHERRY-PICKING"
+bisect = "BISECTING"
+am = "AM"
+am_or_rebase = "AM/REBASE"
+style = "yellow"
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+disabled = false
+
+[hg_branch]
+symbol = "hg:"
+style = "purple"
+format = "on [$symbol$branch]($style) "
+
+[python]
+disabled = false
+format = '[$symbol$pyenv_prefix$version( $virtualenv)]($style) '
+symbol = "py:"
+style = "italic Blue"
+
+[nix_shell]
+disabled = false
+impure_msg = '[impure shell](bold red)'
+pure_msg = '[pure shell](bold green)'
+unknown_msg = '[unknown shell](bold yellow)'
+format = 'nix:[☃️ $state( \($name\))](bold blue) '

@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
+version = 3
+SPDX-PackageName = "x"
+SPDX-PackageSupplier = "x Developers (AUTHORS.md OR .mailmap)"
+SPDX-PackageDownloadLocation = "https://github.com/x/x"
+SPDX-License-Identifier = "Apache-2.0 OR MIT"

@@ -114,13 +114,13 @@ if ! shopt -oq posix; then
   fi
 fi
 
-temp='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]'
+temp="${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]"
 PS1="$temp \$(~/git-prompt)\n$ "
 gocd () {
-  dir=$($GOPATH/bin/go-cd $@)
+  dir=$("$GOPATH"/bin/go-cd "$@")
   if [ -d "$dir" ]; then
-    cd "$dir"
+    cd "$dir" || exit
   else
     echo -e "$dir"
   fi
-} 
+}

@@ -1,0 +1,200 @@
+{
+    "python.languageServer": "None",
+    "workbench.colorTheme": "Default Dark Modern",
+    "redhat.telemetry.enabled": false,
+    "tabnine.experimentalAutoImports": true,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": "off"
+    },
+    "workbench.iconTheme": "vscode-icons",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "vs-kubernetes": {
+        "vscode-kubernetes.helm-path.linux": "/snap/bin/helm",
+        "vscode-kubernetes.kubectl-path.linux": "kubectl",
+        "vscode-kubernetes.minikube-path.linux": "/usr/local/bin/minikube",
+        "vscode-kubernetes.minikube-path-linux": "/home/jackneill/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
+    },
+    "go.alternateTools": {
+        "go": "/snap/go/current/bin/go"
+    },
+    "telemetry.telemetryLevel": "off",
+    "editor.renderWhitespace": "boundary",
+    "editor.tabSize": 8,
+    "editor.formatOnSave": true,
+    "diffEditor.codeLens": true,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "workbench.startupEditor": "none",
+    "explorer.confirmDelete": false,
+    "bracketPairColorizer.depreciation-notice": false,
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "explorer.confirmDragAndDrop": false,
+    "rust-analyzer.lens.enable": false,
+    "svelte.enable-ts-plugin": true,
+    "rust-analyzer.cargo.allFeatures": true,
+    "rust-analyzer.primeCaches.numThreads": 8,
+    "editor.minimap.showSlider": "always",
+    "json.schemas": [],
+    "yaml.customTags": [
+        "!And",
+        "!And sequence",
+        "!If",
+        "!If sequence",
+        "!Not",
+        "!Not sequence",
+        "!Equals",
+        "!Equals sequence",
+        "!Or",
+        "!Or sequence",
+        "!FindInMap",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Join",
+        "!Join sequence",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!Sub sequence",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!ImportValue sequence",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Split sequence"
+    ],
+    "yaml.validate": false,
+    "yaml.schemas": {
+        "file:///home/jackneill/.vscode/extensions/atlassian.atlascode-2.10.12/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "atlascode.jira.jqlList": [
+        {
+            "id": "11f4dad8-3bc7-4aee-9bd0-7cf92691cb2b",
+            "enabled": true,
+            "name": "My evotrex Issues",
+            "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
+            "siteId": "77b780c4-e683-4ccd-b2ee-87d578c97ccd",
+            "monitor": true
+        }
+    ],
+    "python.condaPath": "/home/jackneill/micromamba/condabin/conda",
+    "cmake.configureOnOpen": true,
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-containers"
+    },
+    "aws.telemetry": false,
+    "python.analysis.completeFunctionParens": true,
+    "python.diagnostics.sourceMapsEnabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "go.toolsManagement.autoUpdate": true,
+    "notebook.outline.showCodeCells": true,
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    },
+    "java.codeGeneration.useBlocks": true,
+    "java.saveActions.organizeImports": true,
+    "java.signatureHelp.description.enabled": true,
+    "java.signatureHelp.enabled": true,
+    "java.jdt.ls.java.home": "/usr/lib/jvm/default-java",
+    "java.eclipse.downloadSources": true,
+    "java.maven.downloadSources": true,
+    "java.maxConcurrentBuilds": 4,
+    "java.implementationsCodeLens.enabled": true,
+    "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+    "clang-format.fallbackStyle": "Google",
+    "clang-format.language.java.style": "Google",
+    "clang-format.language.java.fallbackStyle": "Google",
+    "rust-analyzer.imports.granularity.enforce": true,
+    "rust-analyzer.rustfmt.rangeFormatting.enable": true,
+    "outline.showVariables": false,
+    "scm.alwaysShowActions": true,
+    "scm.alwaysShowRepositories": true,
+    "scm.defaultViewMode": "tree",
+    "scm.diffDecorationsGutterPattern": {
+        "added": true
+    },
+    "gitlens.fileAnnotations.command": "blame",
+    "gitlens.codeLens.enabled": false,
+    "gitlens.codeLens.authors.enabled": false,
+    "java.import.gradle.java.home": "/usr/lib/jvm/java-17-openjdk-amd64",
+    "git.openRepositoryInParentFolders": "never",
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "clangd.path": "/home/jackneill/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/16.0.2/clangd_16.0.2/bin/clangd",
+    "dart.flutterGenerateLocalizationsOnSave": "allIfDirty",
+    "dart.flutterHotReloadOnSave": "allIfDirty",
+    "dart.hotReloadOnSave": "allIfDirty",
+    "dartImport.fixOnSave": true,
+    "workbench.editor.empty.hint": "hidden",
+    "mesonbuild.downloadLanguageServer": true,
+    "vscode-kubernetes.kubectl-path": "/snap/kubectl/current/kubectl",
+    "cmake.showOptionsMovedNotification": false,
+    "tailwindCSS.experimental.classRegex": [
+        "class: \"(.*)\""
+    ],
+    "tailwindCSS.includeLanguages": {
+        "rust": "html"
+    },
+    "accessibility.signals.noInlayHints": {
+        "sound": "off"
+    },
+    "C_Cpp.inlayHints.referenceOperator.enabled": true,
+    "editor.suggest.showReferences": false,
+    "editor.inlineSuggest.suppressSuggestions": true,
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    },
+    "buf.binaryPath": "docker run --volume \"$(pwd):/workspace\" --workdir /workspace bufbuild/buf lint",
+    "rust-analyzer.testExplorer": true,
+    "rust-analyzer.debug.openDebugPane": true,
+    "rust-analyzer.inlayHints.bindingModeHints.enable": true,
+    "rust-analyzer.inlayHints.genericParameterHints.const.enable": false,
+    "files.associations": {
+        "justfile": "makefile"
+    },
+    "amp.experimental.connections": true,
+    "docker.extension.enableComposeLanguageServer": false,
+    "explorer.confirmPasteNative": false,
+    "makefile.configureOnOpen": true,
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "chat.instructionsFilesLocations": {
+        ".github/instructions": true,
+        "/home/jackneill/.aitk/instructions/": true
+    },
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "gitHistory.showEditorTitleMenuBarIcons": false,
+    "python.analysis.typeCheckingMode": "standard",
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1"
+}

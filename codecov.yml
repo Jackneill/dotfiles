@@ -1,0 +1,15 @@
+coverage:
+  precision: 2
+  round: down
+  range: 60..80
+
+  ignore:
+    - ".claude"
+    - ".config"
+    - ".cargo"
+    - ".github"
+    - ".vscode"
+    - "assets"
+    - "docs"
+    - "flatpak"
+    - "target"

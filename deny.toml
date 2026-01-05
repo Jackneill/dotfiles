@@ -1,0 +1,42 @@
+[graph]
+# cargo-deny is really only ever intended to run on the "normal" tier-1 targets.
+targets = [
+        "x86_64-unknown-linux-gnu",
+        "aarch64-unknown-linux-gnu",
+        "x86_64-unknown-linux-musl",
+        "aarch64-apple-darwin",
+        "x86_64-apple-darwin",
+        "x86_64-pc-windows-msvc",
+]
+all-features = true
+
+[advisories]
+unmaintained = "workspace"
+ignore = []
+
+[bans]
+multiple-versions = "warn"
+allow-wildcard-paths = true
+wildcards = "deny"
+deny = []
+skip = []
+skip-tree = []
+
+[sources]
+unknown-registry = "deny"
+unknown-git = "deny"
+
+[licenses]
+version = 2
+allow = [
+        # See https://spdx.org/licenses/ for list of possible licenses
+        # [possible values: any SPDX 3.11 short identifier (+ optional exception)].
+        "Apache-2.0",
+        "MIT",
+        "Unicode-3.0",
+        "Zlib",
+        "Apache-2.0 WITH LLVM-exception",
+        "NCSA",
+]
+confidence-threshold = 1.0
+exceptions = []
